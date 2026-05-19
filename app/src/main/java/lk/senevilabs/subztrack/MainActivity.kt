@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import lk.senevilabs.subztrack.features.dashboard.Dashboard
+import lk.senevilabs.subztrack.features.navigation.AppNavigationBar
 import lk.senevilabs.subztrack.ui.theme.SubzTrackTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SubzTrackTheme {
-                Dashboard()
+                AppNavigationBar()
             }
         }
     }
